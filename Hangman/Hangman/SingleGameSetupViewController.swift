@@ -11,8 +11,14 @@ import UIKit
 
 class SingleGameSetupViewController: UIViewController {
     
-    
     @IBOutlet var SingleSetupView: UIView!
+    
+    @IBOutlet weak var nameField: UITextField!
+    
+    @IBOutlet weak var difficulty: UISlider!
+    
+    @IBOutlet weak var themes: UIScrollView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

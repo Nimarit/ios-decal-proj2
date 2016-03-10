@@ -39,6 +39,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="2Yi-9X-ZUR" secondAttribute="trailing" constant="59" id="KTp-dI-AeE"/>
                             <constraint firstItem="x7b-Yh-Qjv" firstAttribute="top" secondItem="8Sv-G0-2ga" secondAttribute="bottom" constant="153" id="Tj7-ku-3oF"/>
@@ -154,6 +155,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="SingleSetupView" destination="8bC-Xf-vdC" id="EQL-eI-581"/>
+                        <outlet property="difficulty" destination="KtV-cK-G76" id="UAD-Z7-tQk"/>
+                        <outlet property="nameField" destination="cKr-OA-Tly" id="GOy-LD-15Y"/>
+                        <outlet property="themes" destination="3Iv-tQ-2yx" id="mMp-OH-cmW"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -256,6 +260,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="VersusSetupView" destination="JXv-12-sDT" id="SR0-fy-zko"/>
+                        <outlet property="playerOneName" destination="pbF-FX-vig" id="HX6-mn-SEZ"/>
+                        <outlet property="playerTwoName" destination="rOU-iL-wmL" id="aW9-05-FKQ"/>
+                        <outlet property="themes" destination="PXp-Xa-AkF" id="QKf-j1-9Hx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Ip-9t-BC2" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -263,10 +270,10 @@
             </objects>
             <point key="canvasLocation" x="2020" y="732"/>
         </scene>
-        <!--View Controller-->
+        <!--Game View Controller-->
         <scene sceneID="P6x-br-uGK">
             <objects>
-                <viewController id="DdU-v4-PDf" sceneMemberID="viewController">
+                <viewController id="DdU-v4-PDf" customClass="GameViewController" customModule="Hangman" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Adl-sP-glJ"/>
                         <viewControllerLayoutGuide type="bottom" id="ITe-df-3y2"/>
@@ -338,6 +345,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Jyf-hl-wRF"/>
+                    <connections>
+                        <outlet property="correctGuesses" destination="M5V-df-0Uq" id="ZTy-lI-44r"/>
+                        <outlet property="incorrectGuesses" destination="SKb-fj-oBH" id="ZfY-nl-vYa"/>
+                        <outlet property="userGuess" destination="x86-7N-WZb" id="W9E-px-wfl"/>
+                        <outlet property="wordBlanks" destination="jbz-lN-ZS5" id="svd-U4-68l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OOV-xq-Rj9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -13,6 +13,12 @@ class VersusGameSetupViewController: UIViewController {
     
     @IBOutlet var VersusSetupView: UIView!
     
+    @IBOutlet weak var playerOneName: UITextField!
+    
+    @IBOutlet weak var playerTwoName: UITextField!
+    
+    @IBOutlet weak var themes: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

@@ -9,7 +9,15 @@
 import UIKit
 
 class GameViewController: UIViewController {
-
+    
+    @IBOutlet weak var wordBlanks: UILabel!
+    
+    @IBOutlet weak var userGuess: UITextField!
+    
+    @IBOutlet weak var correctGuesses: UIButton!
+    
+    @IBOutlet weak var incorrectGuesses: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
